@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.example.verticaldrawerlayout.VerticalDrawerLayout
+        android:id="@+id/test_drawer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="400dip" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is content" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/test_drawer_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#e5e5e5"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:gravity="bottom" />
+    </com.example.verticaldrawerlayout.VerticalDrawerLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/test_drawer_layout"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Open Drawer" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1.0"
+            android:text="Close Drawer" />
+    </LinearLayout>
+
+</RelativeLayout>

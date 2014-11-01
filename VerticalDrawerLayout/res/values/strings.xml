@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VerticalDrawerLayout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="planets_array">
+        <item>China</item>
+        <item>USA</item>
+        <item>Japan</item>
+        <item>Korea</item>
+    </string-array>
+
+</resources>
